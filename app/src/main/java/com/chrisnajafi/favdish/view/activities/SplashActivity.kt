@@ -1,4 +1,4 @@
-package com.chrisnajafi.favdish
+package com.chrisnajafi.favdish.view.activities
 
 import android.content.Intent
 import android.os.Build
@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.LayoutInflater
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import com.chrisnajafi.favdish.R
 import com.chrisnajafi.favdish.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity() {
