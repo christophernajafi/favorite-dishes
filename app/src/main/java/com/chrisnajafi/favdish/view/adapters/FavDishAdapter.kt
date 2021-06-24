@@ -7,6 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.chrisnajafi.favdish.databinding.ItemDishLayoutBinding
 import com.chrisnajafi.favdish.model.entities.FavDish
+import com.chrisnajafi.favdish.view.fragments.AllDishesFragment
+import com.chrisnajafi.favdish.view.fragments.FavoriteDishesFragment
+import com.chrisnajafi.favdish.view.fragments.FavoriteDishesFragmentDirections
 
 class FavDishAdapter(private val fragment: Fragment) :
     RecyclerView.Adapter<FavDishAdapter.ViewHolder>() {
@@ -20,7 +23,8 @@ class FavDishAdapter(private val fragment: Fragment) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding: ItemDishLayoutBinding = ItemDishLayoutBinding.inflate(
-            LayoutInflater.from(fragment.context), parent, false)
+            LayoutInflater.from(fragment.context), parent, false
+        )
         return ViewHolder(binding)
     }
 
@@ -30,6 +34,15 @@ class FavDishAdapter(private val fragment: Fragment) :
             .load(dish.image)
             .into(holder.ivDishImage)
         holder.tvTitle.text = dish.title
+
+        holder.itemView.setOnClickListener {
+            if (fragment is AllDishesFragment) {
+                fragment.dishDetails(dish)
+            }
+            if (fragment is FavoriteDishesFragment) {
+                fragment.dishDetails(dish)
+            }
+        }
     }
 
     override fun getItemCount(): Int {
