@@ -1,6 +1,6 @@
 # Favorite Dishes App
 
-An Android app that enables the user to keep track of recipes of their favorite foods.
+An Android app that enables a user to keep track of recipes of their favorite foods.
 
 ## Available on Google Play
 
@@ -20,7 +20,7 @@ An Android app that enables the user to keep track of recipes of their favorite 
 - Room
 - Palette
 - MVVM
-- Retrofit
+- Retrofit w/RxJava
 - Navigation
 - WorkMNgr
 
