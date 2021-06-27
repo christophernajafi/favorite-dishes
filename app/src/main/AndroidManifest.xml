@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.chrisnajafi.favdish">
-    
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="28"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true"
+        />
 
     <application
         android:name=".application.FavDishApplication"
@@ -15,11 +20,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FavDish">
-        <activity android:name=".view.activities.AddUpdateDishActivity"
-            android:label="Add Dish"
-            android:theme="@style/Theme.FavDish.NoActionBar"
+        <activity
+            android:name=".view.activities.AddUpdateDishActivity"
             android:configChanges="orientation"
-            ></activity>
+            android:label="Add Dish"
+            android:theme="@style/Theme.FavDish.NoActionBar"></activity>
         <activity
             android:name=".view.activities.SplashActivity"
             android:theme="@style/Theme.FavDish.NoActionBar">
@@ -31,7 +36,8 @@
         </activity>
         <activity
             android:name=".view.activities.MainActivity"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name"/>
+
     </application>
 
 </manifest>
