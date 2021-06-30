@@ -23,12 +23,16 @@ object Constants {
 
     const val BASE_URL: String = "https://api.spoonacular.com/"
 
-    // This API key value will be changed when the repo is made public
+    // This API key value will be changed before the repo is made public
     const val API_KEY_VALUE: String = "c185aa23e44b4397bc7f12e7d7cee8c9"
 
     const val LIMIT_LICENSE_VALUE: Boolean = true
     const val TAGS_VALUE: String = "vegetarian, dessert"
     const val NUMBER_VALUE: Int = 1
+
+    const val NOTIFICATION_ID = "FavDish_notification_id"
+    const val NOTIFICATION_NAME = "FavDish"
+    const val NOTIFICATION_CHANNEL = "FavDish_channel_01"
 
     fun dishTypes(): ArrayList<String> {
         val list = ArrayList<String>()

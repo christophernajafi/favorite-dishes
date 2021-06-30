@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">FavDish</string>
     <string name="title_all_dishes">All Dishes</string>
-    <string name="title_favorite_dishes">Favorite</string>
+    <string name="title_favorite_dishes">Favorites</string>
     <string name="title_random_dish">Random Dish</string>
     <string name="splash_screen_title">Fav Dish</string>
     <string name="add_dish">Add Dish</string>
@@ -60,4 +60,9 @@
     <string name="msg_already_added_to_favorites">You have already added the dish to your favorites.</string>
 
     <string name="please_wait">Please Wait!</string>
+
+    <string name="action_share_dish">Share Dish</string>
+
+    <string name="notification_title">Checkout new dish recipes</string>
+    <string name="notification_subtitle">Tap for more details</string>
 </resources>

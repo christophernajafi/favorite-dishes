@@ -10,7 +10,9 @@ An Android app that enables a user to keep track of recipes of their favorite fo
 ## Features
 
 - Take pictures of food
-- Persistent database using Room
+- Store recipes
+- Get random dish recipes
+- Share recipes
 
 ## Technology Stack
 
@@ -22,7 +24,7 @@ An Android app that enables a user to keep track of recipes of their favorite fo
 - MVVM
 - Retrofit w/RxJava
 - Navigation
-- WorkMNgr
+- WorkManager
 
 ## Developer
 
