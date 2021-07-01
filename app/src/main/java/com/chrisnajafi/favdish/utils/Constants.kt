@@ -23,8 +23,9 @@ object Constants {
 
     const val BASE_URL: String = "https://api.spoonacular.com/"
 
-    // This API key value will be changed before the repo is made public
-    const val API_KEY_VALUE: String = "c185aa23e44b4397bc7f12e7d7cee8c9"
+    // This API key value has been changed
+    // Any old API key values found will no longer work
+    const val API_KEY_VALUE: String = ""
 
     const val LIMIT_LICENSE_VALUE: Boolean = true
     const val TAGS_VALUE: String = "vegetarian, dessert"
