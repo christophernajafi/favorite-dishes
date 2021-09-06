@@ -24,7 +24,7 @@ object Constants {
     const val BASE_URL: String = "https://api.spoonacular.com/"
 
     // This API key value has been changed
-    // Any old API key values found will no longer work
+    // Any old API key values found in this repo will no longer work
     const val API_KEY_VALUE: String = ""
 
     const val LIMIT_LICENSE_VALUE: Boolean = true
